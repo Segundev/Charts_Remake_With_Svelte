@@ -1,0 +1,42 @@
+[
+	{
+		"Country": "India",
+		"Rate": 6.034642767
+	},
+	{
+		"Country": "China",
+		"Rate": 5.355299185
+	},
+	{
+		"Country": "Indonesia",
+		"Rate": 4.651323132
+	},
+	{
+		"Country": "Ireland",
+		"Rate": 4.40039422
+	},
+	{
+		"Country": "Iceland",
+		"Rate": 4.382530881
+	},
+	{
+		"Country": "Turkiye",
+		"Rate": 3.625401701
+	},
+	{
+		"Country": "Israel",
+		"Rate": 2.904886465
+	},
+	{
+		"Country": "Saudi Arabia",
+		"Rate": 2.873570074
+	},
+	{
+		"Country": "Costa Rica",
+		"Rate": 2.815064475
+	},
+	{
+		"Country": "Mexico",
+		"Rate": 2.614917408
+	}
+]
