@@ -25,7 +25,7 @@
 
 	const yScale = scaleLinear().domain([0, 60]).range([innerHeight, 0]);
 
-	const colorScale = scaleOrdinal().domain(subCategory).range(['#225374', '#CC7366', '#EBf089']);
+	const colorScale = scaleOrdinal().domain(subCategory).range(['#225374', '#CC7386', '#EBf089']);
 
 	const stackData = stack().keys(subCategory)(data);
 </script>
