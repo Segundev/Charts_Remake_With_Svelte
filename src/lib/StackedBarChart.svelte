@@ -2,7 +2,7 @@
 	import Background from '$lib/Background.svelte';
 
 	//import data and axis components
-	import data from '$lib/StackedBarChart/data.json';
+	import data from '$lib/PercentStacked/data.json';
 	import AxisX from '$lib/StackedBarChart/AxisX.svelte';
 	import AxisY from '$lib/StackedBarChart/AxisY.svelte';
 
