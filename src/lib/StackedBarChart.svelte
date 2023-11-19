@@ -10,7 +10,7 @@
 	import { scaleLinear, scaleOrdinal } from 'd3-scale';
 	import { scaleBand } from 'd3-scale';
 	import { stack } from 'd3-shape';
-	import { map, max } from 'd3-array';
+	import { map } from 'd3-array';
 
 	let width = 400;
 	let height = 300;
