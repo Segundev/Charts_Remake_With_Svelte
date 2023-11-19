@@ -2,7 +2,7 @@
 	import Background from '$lib/Background.svelte';
 
 	//import data and axis components
-	import data from '$lib/MultipleBarChart/data.json';
+	import data from '$lib/PercentStacked/data.json';
 	import AxisX from '$lib/MultipleBarChart/AxisX.svelte';
 	import AxisY from '$lib/MultipleBarChart/AxisY.svelte';
 
