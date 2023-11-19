@@ -1,5 +1,5 @@
 [build]
     base = "src"
     command = "npm run build"
-    publish = "public"
+    publish = "build/"
     functions = "functions/"
