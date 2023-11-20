@@ -9,7 +9,7 @@
 <g transform="translate({margin.left}, 0)">
 	{#each xTicks as tick}
 		<text class="text" x={xScale(tick)} y={height} transform="rotate(0)">
-			{width < 600 && tick.length > 4 ? tick.slice(0, 3) : tick}
+			{width < 600 && tick.length > 4 ? tick.slice(0, 4) : tick}
 		</text>
 	{/each}
 </g>

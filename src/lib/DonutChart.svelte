@@ -1,7 +1,8 @@
 <script>
+	import Background from '$lib/Background.svelte';
+
 	import data from '$lib/DonutChart/data.js';
 	import { scaleOrdinal } from 'd3-scale';
-	import { schemeDark2 } from 'd3-scale-chromatic';
 	import { pie, arc } from 'd3-shape';
 
 	let width = 400;
@@ -10,7 +11,9 @@
 
 	let keys = Object.keys(data);
 	const radius = Math.min(width, height) / 2 - margin;
-	const color = scaleOrdinal().domain(keys).range(schemeDark2);
+	const color = scaleOrdinal()
+		.domain(keys)
+		.range(['#CF251E', '#f77f00', '#fcbf49', '#eae2b7', '#78290f']);
 
 	const pies = pie()
 		.sort(null)
@@ -47,18 +50,50 @@
 	}
 </script>
 
-<div class="chartwrapper">
-	<svg {width} {height}>
-		<g transform="translate({width / 2}, {height / 2})">
-			{#each data_ready as d}
-				<path d={arcs(d)} fill={color(d.data[1])} opacity="0.9" />
-			{/each}
-			{#each data_ready as d}
-				<polyline stroke="black" fill="none" stroke-width="1" points={labels(d)} />
-			{/each}
-			{#each data_ready as d}
-				<text transform={labelText(d)} style="text-anchor={labelStyle(d)}"> {d.data[0]} </text>
-			{/each}
-		</g>
-	</svg>
-</div>
+<Background>
+	<div class="chart-container">
+		<h2>Donut Chart</h2>
+		<svg {width} {height}>
+			<g transform="translate({width / 2}, {height / 2})">
+				{#each data_ready as d}
+					<path d={arcs(d)} fill={color(d.data[1])} opacity="0.9" />
+				{/each}
+				{#each data_ready as d}
+					<polyline stroke="#969696" fill="none" stroke-width="1" points={labels(d)} />
+				{/each}
+				{#each data_ready as d}
+					<text transform={labelText(d)} dy="-5" dx="5" style="text-anchor={labelStyle(d)}">
+						{d.data[0]}
+					</text>
+				{/each}
+			</g>
+		</svg>
+		<div class="footnote">
+			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
+			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
+			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+		</div>
+	</div>
+</Background>
+
+<style>
+	.chart-container {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	svg {
+		position: relative;
+		width: 100%;
+		height: 350px;
+	}
+
+	text {
+		font-size: 1rem;
+	}
+	a {
+		color: var(--grey);
+		font-size: 0.75rem;
+	}
+</style>

@@ -30,11 +30,12 @@
 
 	const colorScale = scaleOrdinal()
 		.domain(['Asia', 'Europe', 'Americas', 'Africa', 'Oceania'])
-		.range(schemeAccent);
+		.range(['#CF251E', '#f77f00', '#fcbf49', '#eae2b7', '#78290f']);
 </script>
 
 <Background>
 	<div class="chart-container" bind:clientWidth={width}>
+		<h2>Scatter Plot</h2>
 		<svg>
 			<AxisX {xScale} {height} {width} {margin} />
 			<AxisY {yScale} {width} {margin} />
@@ -51,25 +52,27 @@
 				{/each}
 			</g>
 		</svg>
+		<div class="footnote">
+			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
+			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
+			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+		</div>
 	</div>
 </Background>
 
 <style>
-	:global(.text) {
-		font-family: Helvetica, Arial;
-		font-size: 0.75rem;
-		font-weight: 200;
-		fill: #999;
-		text-anchor: start;
-	}
-
 	.chart-container {
 		width: 100%;
-		max-width: 550px;
+		max-width: 700px;
 		margin: 0 auto;
 	}
 	svg {
 		width: 100%;
-		height: 350px;
+		height: 300px;
+	}
+
+	a {
+		color: var(--grey);
+		font-size: 0.75rem;
 	}
 </style>

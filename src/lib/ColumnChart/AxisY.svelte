@@ -25,9 +25,3 @@
 		</g>
 	{/each}
 </g>
-
-<style>
-	.line {
-		stroke-dasharray: 2;
-	}
-</style>

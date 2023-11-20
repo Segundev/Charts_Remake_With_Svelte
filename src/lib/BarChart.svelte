@@ -39,11 +39,7 @@
 		role="figure"
 		on:mouseleave={() => (hovered = null)}
 	>
-		<h1>Real GDP Growth Projections for 2023</h1>
-		<p>
-			Global GDP growth in 2023 is projected to be 2.7%, the lowest annual rate since the global
-			financial crisis, with the exception of the 2020 pandemic period.
-		</p>
+		<h2>Bar Chart</h2>
 		<svg>
 			<AxisX {xScale} {height} {width} {margin} />
 			<AxisY {yScale} {width} {margin} />
@@ -62,24 +58,19 @@
 				{/each}
 			</g>
 		</svg>
+
+		<div class="footnote">
+			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
+			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
+			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+		</div>
 	</div>
-	{#if hovered}
-		<Tooltip data={hovered} {xScale} {yScale} {width} />
-	{/if}
 </Background>
 
 <style>
-	:global(.text) {
-		font-family: Helvetica, Arial;
-		font-size: 0.75rem;
-		font-weight: 200;
-		fill: #999;
-		text-anchor: start;
-	}
-
 	.chart-container {
 		width: 100%;
-		max-width: 800px;
+		max-width: 700px;
 		margin: 0 auto;
 	}
 
@@ -88,17 +79,8 @@
 		width: 100%;
 		height: 300px;
 	}
-	h1 {
-		font-size: 20px;
-		text-align: center;
-		color: #525252;
-	}
-
-	p {
-		font-family: Helvetica, Arial;
+	a {
+		color: var(--grey);
 		font-size: 0.75rem;
-		font-weight: 200;
-		color: #999;
-		text-align: center;
 	}
 </style>

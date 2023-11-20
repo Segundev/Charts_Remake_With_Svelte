@@ -4,12 +4,10 @@
 
 <style>
 	div {
-		border: solid 1px #ccc;
 		padding: 10px 18px;
-		color: var(--mako);
-		background: #fcfcfc;
-		border-color: #aaa;
-		box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
-		border-radius: 12px;
+		background: #fdfdfd;
+		box-shadow: 0px 4px 4px rgba(105.19, 105.19, 105.19, 0.25);
+		border-radius: 10px;
+		margin: 1.5rem 1.2rem;
 	}
 </style>

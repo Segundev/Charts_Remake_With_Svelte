@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+:root {
+	/* colors */
+	--blue: #00104a;
+	--yellow: #fbf9eb;
+	--white: #ffffff;
+	--light: #fdfdfd;
+	--grey: #979797;
+	--dark: #202020;
+	--text: #656565;
+
+	/* font type */
+	--sans: 'Roboto Flex';
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--white);
+	font-family: var(--sans);
+	line-height: 1.5;
+	font-size: 1rem;
+	margin: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+a:hover {
+	color: #7caf3b;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all;
+}
+
+h2 {
+	font-size: 20px;
+	color: var(--black);
+	margin-bottom: 1rem;
+}
+
+text {
+	font-size: 0.75rem;
+	font-family: var(--sans);
+	font-weight: 400;
+	fill: var(--text);
+	text-anchor: start;
+	dy: -15;
+}
+
+.line {
+	stroke-dasharray: 2;
+}
+
+.footnote {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	font-size: 0.75rem;
+	color: var(--grey);
+	margin-top: 1rem;
+}
