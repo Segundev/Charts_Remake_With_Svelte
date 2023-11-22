@@ -21,13 +21,14 @@
 
 <style>
 	.page-wrapper {
-		display: grid;
-		grid-template-columns: 20% 80%;
-		/* flex-direction: row; */
+		position: relative;
+		height: 100svh;
 	}
 
 	.chart-container {
-		grid-column: auto;
+		width: 70%;
+		height: 100%;
+		margin-left: 30%;
 	}
 
 	header div {
@@ -35,5 +36,11 @@
 		background: var(--yellow);
 		color: var(--black);
 		font-weight: 500;
+	}
+
+	@media (width < 650px) {
+		.chart-container {
+			width: 100%;
+		}
 	}
 </style>

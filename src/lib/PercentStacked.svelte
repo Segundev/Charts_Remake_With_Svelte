@@ -43,7 +43,7 @@
 </script>
 
 <Background>
-	<div class="chart-container" bind:clientWidth={width}>
+	<div id="100percentbarchart" class="chart-container" bind:clientWidth={width}>
 		<h2>100% Stacked Bar Chart</h2>
 		<svg>
 			<AxisX {xScale} {height} {margin} />
@@ -63,9 +63,17 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/caf1d33456544ab19c9f10446675136e?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
 		</div>
 	</div>
 </Background>

@@ -46,9 +46,21 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/graph/barplot_horizontal.html"
+					>D3-Graph</a
+				>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/3e9a97c889c34a2a8c0278f8104be44d?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/graph/barplot_horizontal.html"
+					>D3-Graph</a
+				>
+			</div>
 		</div>
 	</div>
 </Background>

@@ -34,7 +34,7 @@
 </script>
 
 <Background>
-	<div class="chart-container" bind:clientWidth={width}>
+	<div id="linechart" class="chart-container" bind:clientWidth={width}>
 		<h2>Line Chart</h2>
 		<svg>
 			<AxisX {xScale} {height} {width} {margin} />
@@ -45,9 +45,21 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/graph/line_confidence_interval.html"
+					>D3-Graph</a
+				>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/5699283db50e4e82abd1a05256e18d60?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/graph/line_confidence_interval.html"
+					>D3-Graph</a
+				>
+			</div>
 		</div>
 	</div>
 </Background>

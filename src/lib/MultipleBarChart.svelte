@@ -37,7 +37,7 @@
 </script>
 
 <Background>
-	<div class="chart-container" bind:clientWidth={width}>
+	<div id="multiplebarchart" class="chart-container" bind:clientWidth={width}>
 		<h2>Multiple Bar Chart</h2>
 		<svg>
 			<AxisX {xScale} {height} {width} {margin} />
@@ -59,9 +59,17 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/ec7041aa7b0d4f52bd2314950d688842?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
 		</div>
 	</div>
 </Background>

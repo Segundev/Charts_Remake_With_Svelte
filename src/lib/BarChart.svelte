@@ -34,6 +34,7 @@
 
 <Background>
 	<div
+		id="barchart"
 		class="chart-container"
 		bind:clientWidth={width}
 		role="figure"
@@ -60,9 +61,17 @@
 		</svg>
 
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/4f1b8615ec074c319c4595ce98fc04bd?version=4"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/barplot.html">D3-Graph</a>
+			</div>
 		</div>
 	</div>
 </Background>

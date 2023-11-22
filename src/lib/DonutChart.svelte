@@ -51,7 +51,7 @@
 </script>
 
 <Background>
-	<div class="chart-container">
+	<div id="donutchart" class="chart-container">
 		<h2>Donut Chart</h2>
 		<svg {width} {height}>
 			<g transform="translate({width / 2}, {height / 2})">
@@ -69,9 +69,17 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/donut.html">D3-Graph</a>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/89fa47e1ff954a2082bbc68fb2b07c13?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/donut.html">D3-Graph</a>
+			</div>
 		</div>
 	</div>
 </Background>

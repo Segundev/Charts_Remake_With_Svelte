@@ -34,7 +34,7 @@
 </script>
 
 <Background>
-	<div class="chart-container" bind:clientWidth={width}>
+	<div id="scatterplot" class="chart-container" bind:clientWidth={width}>
 		<h2>Scatter Plot</h2>
 		<svg>
 			<AxisX {xScale} {height} {width} {margin} />
@@ -53,9 +53,17 @@
 			</g>
 		</svg>
 		<div class="footnote">
-			<div class="source">Data Source: <a href="#">D3-Graph</a></div>
-			<div class="code">Code: <a href="#">Jayeola Gbenga</a></div>
-			<div class="inspiration">Inspiration: <a href="#">D3-Graph</a></div>
+			<div class="source">
+				Data Source: <a href="https://d3-graph-gallery.com/bubble.html">D3-Graph</a>
+			</div>
+			<div class="code">
+				Code: <a href="https://svelte.dev/repl/6f877fbe97fe4e0b91ce52fe4c4ba2b5?version=4.2.5"
+					>Jayeola Gbenga</a
+				>
+			</div>
+			<div class="inspiration">
+				Inspiration: <a href="https://d3-graph-gallery.com/bubble.html">D3-Graph</a>
+			</div>
 		</div>
 	</div>
 </Background>
