@@ -3,6 +3,22 @@
 	import Hamburger from '$lib/Icons/Hamburger.svelte';
 
 	let isNavShowing = false;
+	const chartType = [
+		{ label: 'Bar Chart', id: '#barchart' },
+		{ label: 'Column Chart', id: '#columnchart' },
+		{ label: 'Stacked Bar Chart', id: '#stackedbarchart' },
+		{ label: '100 Percent Stacked Bar Chart', id: '#100percentbarchart' },
+		{ label: 'Multiple Bar Chart', id: '#multiplebarchart' },
+		{ label: 'Scatter Plot', id: '#scatterplot' },
+		{ label: 'Line Chart', id: '#linechart' },
+		{ label: 'Tree Map', id: '#treemap' },
+		{ label: 'Donut Chart', id: '#donutchart' },
+		{ label: 'Area Chart', id: '#areachart' },
+		{ label: 'Map of Africa', id: '#africamap' },
+		{ label: 'World Globe', id: '#worldglobe' },
+		{ label: 'MapBox', id: '#mapbox' },
+		{ label: 'Scrollytelling', id: '#scrolly' }
+	];
 </script>
 
 <button on:click={() => (isNavShowing = !isNavShowing)}>
@@ -17,25 +33,11 @@
 		<div class="title">Charts</div>
 		<div class="chart-list">
 			<ol>
-				<li on:click={() => (isNavShowing = true)}><a href="#barchart">Bar Chart</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#columnchart">Column Chart</a></li>
-				<li on:click={() => (isNavShowing = true)}>
-					<a href="#stackedbarchart">Stacked Bar Chart</a>
-				</li>
-				<li on:click={() => (isNavShowing = true)}>
-					<a href="#100percentbarchart">100 Percent Stacked Bar Chart</a>
-				</li>
-				<li on:click={() => (isNavShowing = true)}>
-					<a href="#multiplebarchart">Multiple Bar Chart</a>
-				</li>
-				<li on:click={() => (isNavShowing = true)}><a href="#scatterplot">Scatter Plot</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#linechart">Line Chart</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#treemap">Tree map</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#donutchart">Donut Chart</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#africamap">Map of Africa</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#worldglobe">World Globe</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#mapbox">MapBox</a></li>
-				<li on:click={() => (isNavShowing = true)}><a href="#scrolly">Scrollytelling</a></li>
+				{#each chartType as chart}
+					<li on:click={() => (isNavShowing = true)}>
+						<a href={chart.id}>{chart.label}</a>
+					</li>
+				{/each}
 			</ol>
 		</div>
 	</div>

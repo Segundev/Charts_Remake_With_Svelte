@@ -8,6 +8,8 @@
 	import PercentStacked from '$lib/PercentStacked.svelte';
 	import Treemap from '$lib/Treemap.svelte';
 	import DonutChart from '$lib/DonutChart.svelte';
+	import AreaChart from '$lib/AreaChart.svelte';
+	import AfricaMap from '$lib/AfricaMap.svelte';
 </script>
 
 <BarChart />
@@ -19,3 +21,5 @@
 <ScatterPlot />
 <Treemap />
 <DonutChart />
+<AreaChart />
+<AfricaMap />

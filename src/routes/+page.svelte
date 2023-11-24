@@ -10,7 +10,8 @@
 		<header>
 			<div>
 				This project documents Charts I redeveloped as a learning process to learn d3 and svelte.
-				Most of the data and chart were inspired and copied from d3-graph and Connor Rothshield.
+				Most of the data and chart were inspired and copied from d3-graph-gallery and Connor
+				Rothschilld.
 			</div>
 		</header>
 		<div class="chart-wrapper">
@@ -41,6 +42,7 @@
 	@media (width < 650px) {
 		.chart-container {
 			width: 100%;
+			margin-left: 0;
 		}
 	}
 </style>

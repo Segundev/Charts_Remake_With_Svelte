@@ -1,9 +1,10 @@
 <a href="https://chartsmadewithsvelte.netlify.app">
-  <img alt="Screenshot of web interface showing some of charts along with sidebar for navigation" src="https://classroomio.com/classroomio-opengraph-image.png" />
+  <img alt="Screenshot of web interface showing some of charts along with sidebar for navigation" src="/static/chartsremake.jpg" />
   <h1> Charts made with svelte and d3</h1>
 </a>
 
 ## ✨ About
+
 This project was to showcase some of the charts I developed using svelte and d3. My process usually involves prototyping on svelte repl, in this case, most of my charts were on the platform. I designed a user-responsive interface to show some of the charts as part of my portfolio as a developer
 
 ### Contributions and Inspirations
@@ -17,6 +18,10 @@ Initially most of the code were written in pure d3, I had to refactor the codes 
 3. Area Chart
 4. Scatter Plot and Line Chart
 5. Others
+
+# Project URL
+
+Link to the site hosted [`on netlify`](https://https://chartsmadewithsvelte.netlify.app/).
 
 # create-svelte
 
