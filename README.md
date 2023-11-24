@@ -21,7 +21,7 @@ Initially most of the code were written in pure d3, I had to refactor the codes 
 
 # Project URL
 
-Link to the site hosted [`on netlify`](https://https://chartsmadewithsvelte.netlify.app/).
+Link to the site hosted [`on netlify`](https://chartsmadewithsvelte.netlify.app/).
 
 # create-svelte
 
